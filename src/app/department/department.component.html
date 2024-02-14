@@ -1,0 +1,36 @@
+
+<div>
+    <button class="create">Create Department</button>
+</div>
+
+<div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>ReadOnly</th>
+          <th>Mandatory</th>          
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let department of departments">
+          <td>{{ department.id }}</td>          
+          <td>{{ department.departmentName }}</td>          
+          <td>{{ department.readOnly ? 'true' : 'false' }}</td>
+          <td>{{ department.mandatory ? 'true' : 'false' }}</td>          
+          <td>
+            <button class="delete" (click)="deleteDepartment(department.id)">Delete</button>            
+          </td>
+          <td>
+            <button class="edit">Edit</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  

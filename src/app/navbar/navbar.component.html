@@ -1,0 +1,9 @@
+<div class="navbar">
+    <div class="title" > Bootcamp  </div>
+    <hr/>
+    <div class="tabs">
+        <a (click)="changeTab('department')" [class.active]="selectedTab === 'department'">Department</a>        
+        <span class="space"></span>
+        <a (click)="changeTab('employee')" [class.active]="selectedTab === 'employee'">Employee</a>      
+    </div>
+  </div>

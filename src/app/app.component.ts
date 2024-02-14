@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'crudUI';
+     selectedTab: string='';
+  
+
+  onTabChange(tab: string) {
+    this.selectedTab = tab;
+  }
+
 }

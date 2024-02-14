@@ -1,0 +1,25 @@
+<div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let employee of employees">
+          <td>{{ employee.id }}</td>
+          <td>{{ employee.empName }}</td>
+          <td>
+            <button class="delete" (click)="deleteEmployee(employee.id)">Delete</button>            
+          </td>
+          <td>
+            <button class="edit">Edit</button>
+          </td>         
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
